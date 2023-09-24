@@ -1,16 +1,41 @@
 import "./App.css";
-import Button from "./components/Button";
-
+import Card from "./components/Card/Card";
 function App() {
-  const click1 = () => console.log("Click 1");
-  const click2 = () => console.log("Click 2");
-  const click3 = () => console.log("Click 3");
+  const course1 = {
+    image:
+      "https://ultimatecourses.com/assets/share/courses/react-f02200115da09fd485a296e351972d7ea75701ed8d3d023d9f18c4b38e6b18b0.png",
+    level: "Beginner",
+    title: "Introduction Basic Programming HTML & CSS",
+    user: {
+      avatar:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png",
+      name: "John Doe",
+    },
+    rating: 4.5,
+    students: 1234,
+    modules: 5,
+    duration: 5400,
+  };
+  const course2 = {
+    image:
+      "https://ultimatecourses.com/assets/share/courses/react-f02200115da09fd485a296e351972d7ea75701ed8d3d023d9f18c4b38e6b18b0.png",
+    level: "Beginner",
+    title: "Introduction Basic Programming HTML & CSS",
+    user: {
+      avatar:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png",
+      name: "John Doe",
+    },
+    rating: 4.5,
+    students: 1234,
+    modules: 10,
+    finishedModules: 5,
+    duration: 5400,
+  };
   return (
     <div>
-      <div className="App">Hello!</div>
-      <Button text="Click 1" handleClick={click1}></Button>
-      <Button text="Click 2" handleClick={click2}></Button>
-      <Button text="Click 3" handleClick={click3}></Button>
+      <Card course={course1} />
+      <Card course={course2} isMyCourse={true} />
     </div>
   );
 }
