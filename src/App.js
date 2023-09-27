@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
+
 function App() {
   const course1 = {
     image:
@@ -32,10 +34,26 @@ function App() {
     finishedModules: 5,
     duration: 5400,
   };
+
+  const [count, setValue] = useState(0);
+
+  const incrementCount = () => {
+    setValue(count + 1);
+  };
+  const decrementCount = () => {
+    setValue(count + 1);
+  };
+  const resetCount = () => {
+    setValue(0);
+  };
   return (
     <div>
       <Card course={course1} />
       <Card course={course2} isMyCourse={true} />
+      <h2>Count: {count}</h2>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
+      <button onClick={resetCount}>Reset</button>
     </div>
   );
 }
