@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
+import Login from "./widget/Login";
+import Todo from "./widget/Todo";
+import Users from "./Resources/Users";
+import Posts from "./Resources/Posts";
+import Albums from "./Resources/Albums";
 
 function App() {
   const course1 = {
@@ -54,6 +59,11 @@ function App() {
       <button onClick={incrementCount}>Increment</button>
       <button onClick={decrementCount}>Decrement</button>
       <button onClick={resetCount}>Reset</button>
+      <Login />
+      <Todo />
+      <Users />
+      <Posts />
+      <Albums />
     </div>
   );
 }
