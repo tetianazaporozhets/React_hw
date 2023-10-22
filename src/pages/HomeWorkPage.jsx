@@ -45,7 +45,7 @@ const HomeWorkPage = () => {
     setValue(count + 1);
   };
   const decrementCount = () => {
-    setValue(count + 1);
+    setValue(count - 1);
   };
   const resetCount = () => {
     setValue(0);

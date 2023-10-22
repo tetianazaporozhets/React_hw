@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { Context } from "../../App";
+import { AppContext } from "../../context/ContextProvider";
 
 const List = () => {
-  const tasks = useContext(Context);
+  const tasks = useContext(AppContext);
   return (
     <div>
       <ul>
