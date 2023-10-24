@@ -1,10 +1,10 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
-import MainPage from "./pages/MainPage";
-import AllPosts from "./pages/AllPosts";
-import Post from "./pages/Post";
-import HomeWorkPage from "./pages/HomeWorkPage";
-import PageNotFound from "./pages/PageNotFound";
+import MainPage from "./components/pages/MainPage";
+import AllPosts from "./components/pages/AllPosts";
+import Post from "./components/pages/Post";
+import HomeWorkPage from "./components/pages/HomeWorkPage";
+import PageNotFound from "./components/pages/PageNotFound";
 
 function App() {
   return (

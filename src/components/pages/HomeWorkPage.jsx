@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Card from "../components/Card/Card";
+import Card from "../Card/Card";
 import Login from "../widget/Login";
 import Todo from "../widget/Todo";
 import Users from "../Resources/Users";
 import Posts from "../Resources/Posts";
 import Albums from "../Resources/Albums";
+import ReducerExemple from "../ReducerExemple";
 
 const HomeWorkPage = () => {
   const course1 = {
@@ -63,6 +64,7 @@ const HomeWorkPage = () => {
       <Users />
       <Posts />
       <Albums />
+      <ReducerExemple />
     </div>
   );
 };
